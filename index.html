@@ -25,12 +25,12 @@
                 <div class="smallCircle"></div>
             </div>
             <div class="mainCardDiv">
-                <div class="cardHeaderDiv">
+                <div id="headerDiv" class="cardHeaderDiv">
                     <img src="res/images/netgo_white.png" height="24"/>
                     <div class="ticketTypeDiv">
                         <!-- F3FF -->
                         <p class="ticketTypeIcon">&#xF185;</p>
-                        <p class="ticketType">Day Student</p>
+                        <p id="ticketType" class="ticketType">Day Student</p>
                     </div>
                 </div>
                 <div class="zonesDiv">
@@ -40,17 +40,17 @@
                     </div>
                     <div class="activeTicketsDiv">
                         <p class="zonesText">Active Tickets:</p>
-                        <div class="ticketNumDiv">
+                        <div id="ticketNumDiv" class="ticketNumDiv">
                             <p class="zonesText">1/1</p>
                         </div>
                     </div>
                 </div>
                 <div class="mainTicketDiv">
                     <div class="typeQrDiv">
-                        <img class="typeQrImage" src="res/images/student.png" />
+                        <img onclick="cycleType()" id="typeImage" class="typeQrImage" src="res/images/adult.png" />
                         <img class="typeQrImage" src="res/images/qr_code.png" />
                     </div>
-                    <div class="idRequired">
+                    <div id="idRequired" class="idRequired">
                         <p class="zonesIcon">&#xF2BB;</p>
                         <p class="zonesText">ID Required</p>
                     </div>
@@ -58,7 +58,7 @@
                         <p id="currentDate" class="currentTime">Thu 18 Aug 2022</p>
                         <p id="currentTime" class="timeText">12 : 41 : 21</p>
                     </div>
-                    <div class="miniTicketDiv">
+                    <div id="miniTicketDiv" class="miniTicketDiv">
                         <div class="circleCutoutLeft">
     
                         </div>
@@ -70,15 +70,38 @@
                             <p id="createdDate" class="miniTicketLargeText">Thu 18 Aug 2022 12:31</p>
                         </div>
                         <p class="miniTicketSmallText">Valid until:</p>
-                        <div class="expiryDiv">
+                        <div id="expiryDiv" class="expiryDiv">
                             <p id="expiryDate" class="miniTicketLargeText">Fri 19 Aug 2022 2:00</p>
                         </div>
                         <p class="miniTicketSmallText wrapText">Multiple & Group ticket passengers must travel together</p>
                     </div>
+                    <!-- school: F549 shop: f54e  hotel: f594 building: f1ad-->
                     <div class="tramDiv">
-                        <img class="tramImg" src="res/images/tram.png" />
+                        
+                        <div id="cloudDiv" class="cloudDiv">
+                            <p class="cloud">&#xF0C2;</p>
+                            <p class="cloud">&#xF0C2;</p>
+                            <p class="cloud">&#xF0C2;</p>
+                            <p class="cloud">&#xF0C2;</p>
+                        </div>
+                        <div id="buildingDiv" class="buildingDiv">
+                            <p class="building">&#xF549;</p>
+                            <p class="building">&#xF1AD;</p>
+                            <p class="building">&#xF594;</p>
+                            <p class="building">&#xF549;</p>
+                            <p class="building">&#xF1AD;</p>
+                            <p class="building">&#xF594;</p>
+                            <p class="building">&#xF549;</p>
+                            <p class="building">&#xF1AD;</p>
+                            <p class="building">&#xF594;</p>
+                            <p class="building">&#xF549;</p>
+                            <p class="building">&#xF1AD;</p>
+                            <p class="building">&#xF594;</p>
+                        </div>
+                        
+                        <img onclick="verifAnim()" class="tramImg" src="res/images/tram.png" />
                     </div>
-                    <div class="countdownDiv">
+                    <div id="countdownDiv" class="countdownDiv">
                         <p id="expiryCountdown" class="countdownText">0days 13hrs 18mins 38secs</p>
                     </div>
                 </div>

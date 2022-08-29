@@ -1,6 +1,59 @@
 const days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"]
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
 
+const colours = {
+    Adult: {
+        main: '#002D2A',
+        alt: '#426159',
+        border: '#A9D22C'
+    },
+    Student: {
+        main: '#109EEA',
+        alt: '#4EB5F0',
+        border: '#109EEA'
+    },
+}
+
+var type = 0;
+
+const verifAnim = async () => {
+    document.getElementById('buildingDiv').style.transform = 'translate(250px)';
+    document.getElementById('cloudDiv').style.transform = 'translate(250px)';
+    await setTimeout(() => {
+        document.getElementById('buildingDiv').style.transition = "0s ease-in-out";
+        document.getElementById('cloudDiv').style.transition = "0s ease-in-out";
+        document.getElementById('buildingDiv').style.transform = 'translate(-600px)';
+        document.getElementById('cloudDiv').style.transform = 'translate(-400px)';
+    }, 3000);
+    document.getElementById('buildingDiv').style.transition = "3s ease-in-out";
+    document.getElementById('cloudDiv').style.transition = "3s ease-in-out";
+}
+
+const cycleType = () => {
+    type += 1;
+    if (type > 1) type = 0;
+    const strtype = Object.getOwnPropertyNames(colours)[type]
+    document.getElementById('ticketType').textContent = `Day ${strtype}`;
+
+    document.getElementById('headerDiv').style.backgroundColor = colours[strtype].main;
+    document.getElementById('miniTicketDiv').style.backgroundColor = colours[strtype].main;
+    document.getElementById('countdownDiv').style.backgroundColor = colours[strtype].main;
+
+    document.getElementById('expiryDiv').style.backgroundColor = colours[strtype].alt;
+
+    document.getElementById('ticketNumDiv').style.borderColor = colours[strtype].border;
+
+    if (strtype == 'Student') {
+        document.getElementById('idRequired').style.display = 'flex';
+        document.getElementById('typeImage').src = 'res/images/student.png'
+    }
+    if (strtype == 'Adult') {
+        document.getElementById('idRequired').style.display = 'none';
+        document.getElementById('typeImage').src = 'res/images/adult.png'
+    }
+}
+
+
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", function() {
       navigator.serviceWorker
