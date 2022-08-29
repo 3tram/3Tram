@@ -382,7 +382,7 @@ html, body {
 }
 
 .zonesDiv {
-    background-color: var(--green);
+    background-color: var(--grey);
     height: 55px;
     display: flex;
     flex-direction: row;
@@ -427,7 +427,7 @@ html, body {
     width: 40px;
     border-radius: 50%;
     background-color: var(--white);
-    border: 3px solid var(--primary);
+    border: 3px solid var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
