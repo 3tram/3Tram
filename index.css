@@ -307,13 +307,14 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 60px;
     width: 100%;
     padding: 20px;
+    padding-bottom: 5px;
 }
 
 .hamburger {
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300;
     font-style: normal;
@@ -321,8 +322,7 @@ html, body {
 }
 
 .navText {
-    font-size: 18px;
-    letter-spacing: 0.75px;
+    font-size: 17px;
     font-family: 'Azo Sans';
     font-weight: 300;
     font-style: normal;
@@ -341,19 +341,19 @@ html, body {
     border-radius: 20px;
     border: 1px solid #d8d8d8;
     flex-direction: column;
-    margin: 40px;
+    margin: 25px;
     margin-top: 5px;
     overflow: hidden;
 }
 
 .cardHeaderDiv {
     background-color: var(--blue);
-    height: 54px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
 }
 
 .ticketTypeDiv {
@@ -363,8 +363,7 @@ html, body {
 }
 
 .ticketType {
-    font-size: 26px;
-    letter-spacing: 0.75px;
+    font-size: 21px;
     font-family: 'Azo Sans';
     font-weight: 500;
     font-style: normal;
@@ -372,7 +371,7 @@ html, body {
 }
 
 .ticketTypeIcon {
-    font-size: 30px;
+    font-size: 26px;
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300;
     font-style: normal;
@@ -383,7 +382,7 @@ html, body {
 
 .zonesDiv {
     background-color: var(--grey);
-    height: 79px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -399,8 +398,7 @@ html, body {
 }
 
 .zonesText {
-    font-size: 18px;
-    letter-spacing: 0.75px;
+    font-size: 14px;
     font-family: 'Azo Sans';
     font-weight: 300;
     font-style: normal;
@@ -409,7 +407,7 @@ html, body {
 }
 
 .zonesIcon {
-    font-size: 23px;
+    font-size: 21px;
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300;
     font-style: normal;
@@ -424,8 +422,8 @@ html, body {
 }
 
 .ticketNumDiv {
-    height: 58px;
-    width: 58px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     background-color: var(--white);
     border: 3px solid var(--blue);
@@ -447,11 +445,11 @@ html, body {
     justify-content: center;
     width: 100%;
     margin-top: 23px;
-    gap: 120px;
+    gap: 90px;
 }
 
 .typeQrImage {
-    height: 111px;
+    height: 90px;
 }
 
 .idRequired {
@@ -475,8 +473,8 @@ html, body {
 }
 
 .currentTime {
-    font-size: 24px;
-    word-spacing: 8px;
+    font-size: 18px;
+    word-spacing: 4px;
     font-family: 'Azo Sans';
     font-weight: 500;
     font-style: normal;
@@ -485,7 +483,7 @@ html, body {
 }
 
 .timeText {
-    font-size: 24px;
+    font-size: 18px;
     word-spacing: -3px;
     font-family: 'Azo Sans';
     font-weight: 500;
@@ -499,15 +497,14 @@ html, body {
     background-color: var(--blue);
     border-radius: 20px;
     align-items: center;
-    margin: 14px;
-    padding: 14px;
+    margin: 10px;
+    padding: 10px;
     position: relative;
     overflow: hidden;
 }
 
 .miniTicketSmallText {
-    font-size: 18px;
-    letter-spacing: 0.75px;
+    font-size: 14px;
     font-family: 'Azo Sans';
     font-weight: 300;
     font-style: normal;
@@ -520,8 +517,7 @@ html, body {
 }
 
 .miniTicketLargeText {
-    font-size: 26px;
-    letter-spacing: 0.75px;
+    font-size: 20px;
     font-family: 'Azo Sans';
     font-weight: bold;
     color: var(--white);
@@ -530,7 +526,7 @@ html, body {
 .createdDiv {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-bottom: 14px;
 }
 
@@ -543,14 +539,13 @@ html, body {
     justify-content: center;
     padding: 12px;
     padding-bottom: 8px;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin: 5px;
 }
 
 .circleCutoutLeft {
     position: absolute;
     left: 0;
-    top: 59px;
+    top: 38px;
     width: 26px;
     height: 26px;
     background-color: var(--white);
@@ -561,7 +556,7 @@ html, body {
 .circleCutoutRight {
     position: absolute;
     right: 0;
-    top: 59px;
+    top: 38px;
     width: 26px;
     height: 26px;
     background-color: var(--white);
@@ -577,11 +572,11 @@ html, body {
 }
 
 .tramImg {
-    height: 25px;
+    height: 22px;
 }
 
 .countdownDiv {
-    height: 54px;
+    height: 45px;
     background-color: var(--blue);
     width: 100%;
     display: flex;
@@ -593,9 +588,8 @@ html, body {
 }
 
 .countdownText {
-    font-size: 24px;
-    letter-spacing: 0.75px;
-    word-spacing: 20px;
+    font-size: 18px;
+    word-spacing: 10px;
     font-family: 'Roboto Mono';
     font-weight: bold;
     color: var(--white);
