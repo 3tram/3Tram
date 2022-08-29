@@ -455,7 +455,7 @@ html, body {
 }
 
 .idRequired {
-    display: flex;
+    display: none;
     flex-direction: row;
     background-color: var(--grey);
     border-radius: 5%;
