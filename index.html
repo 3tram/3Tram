@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>3Tram</title>
+
+        <link rel="manifest" href="manifest.json" />
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="/res/images/icons/icon48.png" />
+        <link rel="apple-touch-icon" href="/res/images/icons/icon72.png" />
+        <link rel="apple-touch-icon" href="/res/images/icons/icon96.png" />
+        <link rel="apple-touch-icon" href="/res/images/icons/icon144.png" />
+        <link rel="apple-touch-icon" href="/res/images/icons/icon192.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#A9D22C" />
+        <meta name="theme-color" content="#A9D22C" />
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div class="navBarDiv">
+                <p class="hamburger">&#xF0C9;</p>
+                <p class="navText">My Tickets</p>
+                <div class="smallCircle"></div>
+            </div>
+            <div class="mainCardDiv">
+                <div class="cardHeaderDiv">
+                    <img src="res/images/netgo_white.png" height="32"/>
+                    <div class="ticketTypeDiv">
+                        <!-- F3FF -->
+                        <p class="ticketTypeIcon">&#xF185;</p>
+                        <p class="ticketType">Day Student</p>
+                    </div>
+                </div>
+                <div class="zonesDiv">
+                    <div class="allZonesDiv">
+                        <p class="zonesIcon">&#xF3C5;</p>
+                        <p class="zonesText">All Zones</p>
+                    </div>
+                    <div class="activeTicketsDiv">
+                        <p class="zonesText">Active Tickets:</p>
+                        <div class="ticketNumDiv">
+                            <p class="zonesText">1/1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainTicketDiv">
+                    <div class="typeQrDiv">
+                        <img class="typeQrImage" src="res/images/student.png" />
+                        <img class="typeQrImage" src="res/images/qr_code.png" />
+                    </div>
+                    <div class="idRequired">
+                        <p class="zonesIcon">&#xF2BB;</p>
+                        <p class="zonesText">ID Required</p>
+                    </div>
+                    <div class="currentTimeDiv">
+                        <p id="currentDate" class="currentTime">Thu 18 Aug 2022</p>
+                        <p id="currentTime" class="timeText">12 : 41 : 21</p>
+                    </div>
+                    <div class="miniTicketDiv">
+                        <div class="circleCutoutLeft">
+    
+                        </div>
+                        <div class="circleCutoutRight">
+    
+                        </div>
+                        <div class="createdDiv">
+                            <p class="miniTicketSmallText">Created:</p>
+                            <p id="createdDate" class="miniTicketLargeText">Thu 18 Aug 2022 12:31</p>
+                        </div>
+                        <p class="miniTicketSmallText">Valid until:</p>
+                        <div class="expiryDiv">
+                            <p id="expiryDate" class="miniTicketLargeText">Fri 19 Aug 2022 2:00</p>
+                        </div>
+                        <p class="miniTicketSmallText wrapText">Multiple & Group ticket passengers must travel together</p>
+                    </div>
+                    <div class="tramDiv">
+                        <img class="tramImg" src="res/images/tram.png" />
+                    </div>
+                    <div class="countdownDiv">
+                        <p id="expiryCountdown" class="countdownText">0days 13hrs 18mins 38secs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
