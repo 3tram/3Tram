@@ -130,10 +130,7 @@ const start = (expiry) => {
         ${month} 
         ${year}`;
 
-        document.getElementById('currentTime').textContent = `
-        ${hour}:
-        ${min}:
-        ${sec}`;
+        document.getElementById('currentTime').textContent = `${hour}:${min}:${sec}`;
         
         const diff = new Date(Math.abs(expiry-now))
 
