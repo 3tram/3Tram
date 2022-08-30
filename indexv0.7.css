@@ -483,8 +483,7 @@ html, body {
     font-size: 18px;
     word-spacing: 4px;
     font-family: 'Roboto Mono';
-    font-weight: 500;
-    font-style: normal;
+    font-weight: bold;
     color: var(--black);
     padding-right: 8px;
 }
@@ -492,9 +491,8 @@ html, body {
 .timeText {
     font-size: 18px;
     word-spacing: -3px;
-    font-family: 'Azo Sans';
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
     color: var(--black);
 }
 
