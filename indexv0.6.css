@@ -482,7 +482,7 @@ html, body {
 .currentTime {
     font-size: 18px;
     word-spacing: 4px;
-    font-family: 'Azo Sans';
+    font-family: 'Roboto Mono';
     font-weight: 500;
     font-style: normal;
     color: var(--black);
